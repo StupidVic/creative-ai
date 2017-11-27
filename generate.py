@@ -42,6 +42,7 @@ def printSongLyrics(verseOne, verseTwo, chorus):
     print
     for verse in verses:
         for line in verse:
+            print(line, verse)
             print (' '.join(line)).capitalize()
         print
 
