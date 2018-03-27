@@ -21,7 +21,7 @@ def returnDictionary(D):
     >>> returnDictionary(coleridge) == {'in': 'xanadu', 'did': 'kubla khan'}
     True
     """
-    pass
+    D
 
 def keyInDict(D, K):
     """
@@ -36,7 +36,7 @@ def keyInDict(D, K):
     >>> keyInDict(coleridge, 'decree')
     False
     """
-    pass
+    K in D
 
 def returnKeyVal(D, K):
     """
@@ -49,7 +49,7 @@ def returnKeyVal(D, K):
     >>> returnKeyVal(coleridge, 'decree')
     {}
     """
-    pass
+    D[K]
 
 def setKeyVal(D, K, V):
     """
@@ -62,7 +62,8 @@ def setKeyVal(D, K, V):
     >>> setKeyVal({'through': 'caverns'}, 'measureless', 'to man') == {'through': 'caverns', 'measureless': 'to man'}
     True
     """
-    pass
+    D[K] = V
+    D
 
 def setKeyValList(D, K, V1, V2, V3, V4):
     """
@@ -74,7 +75,8 @@ def setKeyValList(D, K, V1, V2, V3, V4):
     >>> setKeyValList({}, 'down', 'to', 'a', 'sunless', 'sea') == {'down': ['to', 'a', 'sunless', 'sea']}
     True
     """
-    pass
+    D[K] = {V1, V2, V3, V4}
+    D
 
 def asciiAssociate():
     """
@@ -91,6 +93,7 @@ def asciiAssociate():
     from string import ascii_lowercase as alphabet
     pass
 
+   
 def getColor(favoriteColors, name):
     """
     Requires: favoriteColors is a dictionary, name is a key in
